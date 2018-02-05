@@ -4,7 +4,7 @@ import org.springframework.beans.BeansException;
 import org.springframework.beans.factory.config.BeanPostProcessor;
 import org.springframework.core.annotation.AnnotationUtils;
 
-import com.annotation.test.springannotation.annotation.JewelRemote;
+import com.annotation.test.springannotation.annotation.AutoTest;
 
 /**
  * @author 张钟
@@ -22,8 +22,8 @@ public class ClassAnnotationProcessor implements BeanPostProcessor {
     public Object postProcessAfterInitialization(Object bean,
                                                  String beanName) throws BeansException {
 
-        JewelRemote myListener = AnnotationUtils.findAnnotation(bean.getClass(), JewelRemote.class);
-        if (myListener != null) {
+        AutoTest autoTest = AnnotationUtils.findAnnotation(bean.getClass(), AutoTest.class);
+        if (autoTest != null) {
             System.out.println(bean.getClass().getName());
         }
 

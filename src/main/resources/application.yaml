@@ -1,2 +1,13 @@
 server:
   port: 7667
+
+spring:
+  jackson:
+    date-format: yyyy-MM-dd HH:mm:ss
+  mvc:
+    view:
+      suffix: .ftl
+      prefix: /templates/
+  freemarker:
+    cache: false
+    request-context-attribute: request
