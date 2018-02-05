@@ -1,8 +1,5 @@
 # spring-annotation
 自定义注解,Spring扫描自定义注解
-输出结果
-2018-02-02 18:20:36.977  INFO 16449 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
-com.annotation.test.springannotation.component.MyComponent
-sayHello1
-com.annotation.test.springannotation.component.MyComponent2
-sayHello2
+
+1.实现对自定义注解的扫描
+2.扫描AutoTest注解,对注解进行解析,保存到map中,供查询

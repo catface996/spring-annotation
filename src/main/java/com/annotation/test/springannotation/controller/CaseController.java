@@ -27,7 +27,7 @@ public class CaseController {
             capabilities.setCapability("deviceName", "Android Emulator");
             capabilities.setCapability("automationName", "Appium");
             capabilities.setCapability("platformName", "Android");
-            capabilities.setCapability("platformVersion", "7.1.1");
+            capabilities.setCapability("platformVersion", "5.0.2");
             capabilities.setCapability("appPackage", "com.hanma56.driver.hanmadriver");
             capabilities.setCapability("appActivity", "MainActivity");
 
